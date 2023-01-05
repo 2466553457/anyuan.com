@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHINA CN | 暗源</title>
+  <link rel="shortcut icon" href="anyuan.ico" />
+  <link rel="stylesheet" href="buju.css" />
+  <link rel="stylesheet" href="dl.css" />
+  <link rel="stylesheet" href="chushidaohanglan.css" />
+<!--      <style>html{-->
+<!--	filter: grayscale(100%);-->
+<!--	-webkit-filter: grayscale(100%);-->
+<!--	-moz-filter: grayscale(100%);-->
+<!--	-ms-filter: grayscale(100%);-->
+<!--	-o-filter: grayscale(100%);-->
+<!--	filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-->
+<!--}</style>-->
+  <style>
+    a{
+      text-decoration: none;
+    }
+    .eve {
+      /* display: inline;这是一个可以让两个盒子出现在一行之内，margin-left: 20px;这是让两个文字之间产生缝隙。 */
+      display: inline;
+      margin-left: 20px
+    }
+    .seve{
+      /* display: inline;这是一个可以让两个盒子出现在一行之内。 */
+      display: inline;
+    }
+    /*弹层动画（放大）*/
+
+    .popIn {
+      -webkit-animation: fadeleftIn .4s;
+      animation: fadeleftIn .4s;
+      -webkit-animation-name: popIn;
+      animation-name: popIn;
+    }
+
+    @-webkit-keyframes popIn {
+      0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0.5, 0.5, 0.5);
+        opacity: 0;
+      }
+
+      50% {
+        -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 1;
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0.5, 0.5, 0.5);
+        opacity: 0;
+      }
+
+      50% {
+        -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <!-- 编辑者：无奈的编从者  原创作者：晓空（宇风） 二者合二为一就叫：无奈的程序员-->
+  <!-- 我就是“无奈的程序员”，一个不会编程的程序员，不要问我为什么，因为我是自学的，大脑不太灵活，英语就是我的噩梦，洋人的语言真难搞，哎！-->
+  <!-- “一个自制的网站，不获利，只为带来方便”这是我的初衷，目前也是。 -->
+</head>
+
+<body
+  style="background-image:url('2023.png'); background-attachment: fixed; background-repeat:no-repeat; Background-size:cover;">
+
+<!-- 弹窗代码开始 -->
+  <div class="popIn">
+    <div class="web_notice"
+      style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.815);">
+      <div
+        style="position: fixed;top: 50%;left: 50%;width: 60%;background: rgba(255, 0, 0, 0.863);transform: translate(-50%, -50%);border-radius: 10px;padding: 5% 4%;">
+        <h2 style="font-weight: bold;text-align: center;font-size: 200%;color: rgb(251, 255, 0);">暗源公告</h2>
+        <div style="font-size: 120%;margin-top: 5%;line-height: 150%;color: rgb(0, 0, 0);
+      ">
+          <p style="color: rgb(255, 255, 255); text-align: center;font-size: 200%;">新年快乐！</p>
+           <img id='img' class='max' src=''>
+          <p style="color: rgb(255, 255, 255);">新年到了！我们满怀期待新年的那一刻，终于来了！</p>
+           <p style="color: rgb(255, 255, 255);">在这我祝大家在新的一年里开开心心、顺顺利利、平平安安、无财不来、家和万事兴!</p>
+          <p style="color: rgba(255, 255, 255, 0.87);font-size: 70%;text-align: center;">2023/01/22更新！</p>
+        </div><a
+          style="display: block;background: #001aff;color: rgb(251, 255, 0);text-align: center;font-weight: bold;font-size: 150%;line-height: 300%;margin: 0 auto;margin-top: 1%;border-radius: 32px;width: 80%;"
+          onclick="javascript:document.querySelector('.web_notice').remove()">关闭通知</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 弹窗代码结束 -->
+
+<!-- 音乐开始 -->
+<audio
+      id="bgmusic"
+      src="chunjie.mp3"
+      autoplay="autoplay"
+      loop="loop"
+      style="display: block; width: 3%; height: 3%"
+    ></audio>
+    <script type="text/javascript">
+      function toggleSound() {
+        var music = document.getElementById("bgmusic"); //获取ID
+        console.log(music);
+        console.log(music.paused);
+        if (music.paused) {
+          //判读是否播放
+          music.paused = false;
+          music.play(); //没有就播放
+        }
+      }
+      setInterval("toggleSound()", 1);
+    </script>
+<!-- 音乐结束 -->
+  <!-- 灯笼开始 -->
+<!--右一 -->
+    <div class="deng-box">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">乐</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右2-->
+    <div class="deng-box1">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">快</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左二 -->
+    <div class="deng-box3">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">年</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左一 -->
+    <div class="deng-box2">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">新</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+<!-- 灯笼结束 -->
+
+  <div class="header">
+    <div style="background-color: rgba(0, 140, 255, 0.123)">
+      <h1 style="color: rgb(255, 251, 7);font-family: kaiti;font-size: 400%;">
+        暗源初始
+      </h1>
+
+      <h2 style="color: rgb(0, 0, 0);font-size: 200%;">
+        祝大家2023新年快乐！
+      </h2>
+
+      <!-- 注释一下：input=打印，就像打印一个东西 -->
+
+      <div>
+        <form target="_blank" method="get" action="https://www.baidu.com/s">
+          <input type="text" placeholder="输入内容..." name="word" class="text" />
+          <input type="submit" value="暗源搜索" class="search" />
+        </form>
+
+        <!-- <img src="" alt="头像" width="500" height="300" -->
+      </div>
+
+      <!-- 这是一个导航点，精确标注你的位置 -->
+
+      <p id="demo">您可能需要您当前的位置，点击获取您当前的位置。</p>
+      <button onclick="getLocation()">点我获取</button>
+      <script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+            x.innerHTML = "该浏览器不支持获取地理位置,请您换个浏览器试一试。";
+          }
+        }
+
+        function showPosition(position) {
+          x.innerHTML =
+            "纬度: " +
+            position.coords.latitude +
+            "<br>经度: " +
+            position.coords.longitude;
+        }
+      </script>
+    </div>
+  </div>
+
+  <ul>
+    <div class="dropdown">
+      <a href="index.html" class="dropbtn">点击返回</a>
+      <div class="dropdown-content">
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn">游戏选项</a>
+      <div class="dropdown-content">
+        <a href="xinnianhao.html" target="_blank">网站游戏资源</a>
+        <a href="ruanjian.html" target="_blank">游戏软件资源</a>
+        <a href="jiasuqi.html" target="_blank">加速器资源</a>
+        <a href="wodeshijie.html" target="_blank">我的世界资源</a>
+        <a href="steamok.html" target="_blank">steamok软件</a>
+        <a href="eluosi.html" target="_blank">俄罗斯资源</a>
+        <a href="qikan2.html" target="_blank">骑马与砍杀2霸主</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn">学习选项</a>
+      <div class="dropdown-content">
+        <a href="xuexi.html" target="_blank">国家教育资源</a>
+        <a href="diannao.html" target="_blank">电脑学习资源</a>
+        <a href="mifan.html" target="_blank">菜系查看资源</a>
+        <a href="yixue.html" target="_blank">常用医疗资源</a>
+        <a href="shenghuo.html" target="_blank">常用生活资源</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn" href="xinghe.html" target="_blank">星河战队:灭绝汉化文件</a>
+    </div>
+    <div class="dropdown">
+      <a class="dropbtn">技术支持</a>
+      <div class="dropdown-content">
+        <a href="gonggao2.html" target="_blank">公告内容</a>
+        <a href="ziwojieshao1.html" target="_blank">个人简介</a>
+        <!-- <a href="lianxifangshi.html" target="_blank">加我私信</a> -->
+        <a href="zizhuwomen.html" target="_blank">资助UP</a>
+        <a href="ganxie.html" target="_blank">付出感谢</a>
+        <a href="https://www.bilibili.com/video/BV1Nv4y197Eq/?vd_source=43fa4a3b44f314b1219c0520a70928bc"
+          target="_blank">网站讲解与介绍</a>
+        <!-- <a href="lianxifangshi.html" target="_blank">问题提问和解决</a> -->
+      </div>
+    </div>
+  </ul>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 style="color: red;">公告更新情况</h2>
+        <div class="fakeimg">
+          <p style="color: rgb(207, 2, 2)">*注意：想看更多内容请下拉到下面"公告更新情况"或者点击上方的“技术支持”——>“公告内容”。</p>
+          <hr />
+          <p style="font-size: 130%; color:rgb(47, 0, 255)" class="seve">更新结果:<p class="seve" style="font-size: 130%;">【公告已于2022/12/12更新完成】</p></p>
+        </div>
+      </div>
+      <!-- <div class="card">
+        <h2>联系方式</h2>
+        <h5>纪元4719 年 8 月 21 日（七月廿四）</h5>
+        <h5>公元2022 年 8 月 21 日</h5>
+        <div class="fakeimg">
+          <p style="color: red;">*注意：</p>
+          <p style="color: rgb(145, 9, 9);">1.想看更多的联系方式，请点击上方的“技术支持”或者在上方的个人简介里面找到“联系方式”也可以进行加我私信。</p>
+          <hr />
+          <p style="font-family: kaiti; font-size: 30px;">QQ二维码+QQ号:2995209639</p>
+          数字尽量用%，因为这样可以适配手机
+          <img src="qq.jpg" alt="Smiley face" width="35%" />
+        </div>
+      </div> -->
+      <div class="card">
+        <h2>公告更新情况</h2>
+        <h5>纪元4719 年 12 月 12 日（十一月十九）</h5>
+        <h5>公元2022 年 12 月 12 日</h5>
+        <div class="fakeimg">
+          <p style="color: red">*注意</p>
+          <p style="color: rgb(168, 4, 4)">
+            1.这个界面的公告更新情况，只显示七天。
+          </p>
+          <p style="color: rgb(168, 4, 4)">
+            2.如想看到完整的公告更新情况，请点击上方的"公告选项——＞最新的公告（页面简洁）"即可看到。
+          </p>
+          <hr />
+          <p style="color: rgb(0, 0, 0)">
+          <h6>纪元4719 年 12 月 12 日（十一月十九）</h6>
+
+          <h3 style="color:rgb(76, 56, 255) ; background-color: rgba(255, 152, 238, 0.397); font-family: kaiti;">
+            <!-- <p>1.对网站的整体布局进行了系统的更新。</p>
+            <p>2.对网站的bug进行了修复。</p>
+            <p>3.对网站的付出"感谢选项"里的人名单进行了优化处理。</p> -->
+            <!-- <p>2.将所有的百度云链接，改写成了阿里云下载（除外游之外），让您体验加速下载。</p> -->
+            <!-- <p>3.游戏选项中的平台软件资源中增加了steamok软件</p> -->
+          </h3>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>名言名句</h2>
+        <h5>纪元4719 年 10 月 12 日（九月十七）</h5>
+        <h5>公元2022 年 10 月 12 日</h5>
+        <div class="fakeimg">
+          <p style="color: rgb(255, 0, 0)">*部分诗、词句不能标出名人和出处，实属抱歉，请大家原谅。</p>
+          <hr>
+          <p style="color: rgb(0, 0, 0)">
+          <p>1.智慧不会向我们走来，我们必须勤奋思索。</p>
+          <p>2.少壮不努力，老大徒伤悲。——————【宋】郭茂倩——《乐府诗集·长歌行》</p>
+          <p>3.一寸光阴一寸金，寸金难买寸光阴。——————【唐】王贞白——《白鹿洞二首》</p>
+          <p>4.多学，多做，多看，你一定会成功。</p>
+          <p>5.成功的秘诀，就是不断地思考学习。</p>
+          <p>6.人生的道路只有前进，没有后退。</p>
+          <p>7.光阴似箭，日月如梭。——————【唐】韦庄——《关河道中》</p>
+          <p>8.忘掉失败，但要牢记失败中的教训。</p>
+          <p>9.拿望远镜看别人，拿放大镜看自我。</p>
+          <p>10.财富装潢门面，学识充实头脑。</p>
+          <p>11.人无善志，虽勇必伤。——————【汉】刘安——《淮南子·主术训》</p>
+          <p>12.一知半解的人，多不谦虚；见多识广有本领的人，一定谦虚。————【中】谢觉哉</p>
+          <p>13.与其临渊羡鱼，不如退而结网。——————《史记汉书·董仲舒传》</p>
+          <p>14.志向不过是记忆的奴隶，生气勃勃地降生，但却很难成长。——————【英】威廉·莎士比亚</p>
+          <p>15.吾尝终日不食，终夜不度，以思，无益，不如学也。——————【春秋】孔子——《论语十则》其十</p>
+          <p>16.君子求诸己，小人求诸人。——————【春秋】孔子——《论语·卫灵公》</p>
+          <p>17.知之者不如好之者，好之者不如乐之者。——————【春秋】孔子——《论语》</p>
+          <p>18.己所不欲，勿施于人。——————【春秋】孔子——《论语》</p>
+          <p>19.君子之守，修其身而天下平。——————【战国】孟子——《孟子·尽心下》</p>
+          <p>20.无父无君，是禽兽也。——————【战国】孟子——《孟子·滕文公章句下·第九节》</p>
+          <p>21.横眉冷对千夫指，俯首甘为孺子牛。——————【中】鲁迅——《自嘲》</p>
+          <p>22.度尽劫波兄弟在，相逢一笑泯恩仇。——————【中】鲁迅——《题三义塔》</p>
+          <p>23.业余生活要有意义，不要越轨。——————【美】乔治·华盛顿</p>
+          <p>24.业精于勤，荒于嬉；行成于思，毁于随。——————【唐】韩愈——《进学解》</p>
+          <p>25.一切节省，归根到底都归结为时间的节省。——————【德】卡尔·海因里希·马克思</p>
+          <p>26.路漫漫其修远兮，吾将上下而求索。——————【战国】屈原——《离骚》</p>
+          <p>27.穷则独善其身，达则兼济天下。——————【战国】孟子——《 尽心章句上 》（第九）</p>
+          <p>28.一个能思想的人，才真是一个力量无边的人。——————【法】奥诺雷·德·巴尔扎克</p>
+          <p>29.最聪明的人是最不愿浪费时间的人。——————【意大利】但丁·阿利吉耶里</p>
+          <p>30.天下兴亡，匹夫有责。——————【明末清初】顾炎武——《日知录·正始》</p>
+          <p>31.最困难的事情就是认识自己。—————— 【希腊】未知</p>
+          <p>32.阅读使人充实，会谈使人敏捷，写作使人精确。——————【英】弗朗西斯·培根</p>
+          <p>33.壮心未与年俱老，死去犹能作鬼雄。——————【南宋】陆游——《书愤·其二》</p>
+          <p>34.燕雀戏藩柴，安识鸿鹄游。——————【汉末三国】曹植——《鰕鳣篇》</p>
+          <p>35.年少从他爱梨粟，长成须读五车书。——————【宋】王安石——《赠外孙》</p>
+          </p>
+        </div>
+        <p></p>
+      </div>
+    </div>
+
+<div class="rightcolumn">
+      <div class="card">
+        <h2>内容公布</h2>
+        <div class="fakeimg">
+          <h5>
+            <p style="color: rgb(0, 0, 0)"><p style="font-size: 300%;color: rgb(255, 0, 0);">朋友们，过年啦！</p>
+          <hr>
+          <h2 style="color: rgb(0, 4, 255);">在这里我祝大家在新的一年里开开心心、顺顺利利、平平安安、无财不来、家和万事兴!</h2>
+          </p>
+          </h5>
+        </div>
+      </div>
+      </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>内容公布</h2>
+        <div class="fakeimg">
+          <h5>
+            <p style="color: rgb(0, 0, 0)"><!-- <video width="100%" height="100%" controls autoplay>
+              <source src="aiyuejin1.mp4" type="video/mp4">
+              <source src="aiyuejin1.ogg" type="video/ogg">
+              <source src="aiyuejin1.webm" type="video/webm">
+              您的浏览器不支持 video 属性。
+            </video> -->
+          <hr>
+          <h2 style="color: rgb(25, 0, 255);">2023年终于到来啦！</h2>
+          <p style="color: rgb(255, 0, 0);">2022再见啦！又一个让全世界人民痛苦的一年！走吧！2023会赋予我们幸福、会赋予我们健康、会赋予我们快乐！</p>
+          </p>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部 -->
+  <div>
+    <footer style="
+        margin-top: 60px;
+        background-color: #b6b6b69d;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      ">
+      <div class="eve">
+        <a style="color: rgb(0, 0, 0)" href="https://www.ccopyright.com.cn/" target="_blank"
+          rel="noopener noreferrer">
+          <img src="zhongguobanquan.jpg" alt="anbei" style="width: 15px; height: 15px;"> 中国版权保护中心 </a>
+      </div>
+      <div class="eve">
+        <a style="color: rgb(0, 0, 0)" href="https://www.ccopyright.com.cn/" target="_blank" rel="noopener noreferrer">
+          <img src="tubiao.png" alt="anbei" style="width: 20px; height: 15px"> 版权 © 2995209639@qq.com</a>
+      </div>
+      <div class="eve">
+        <a style="color: rgb(0, 0, 0)" href="https://neocities.org/site_files/gxzy.zip" target="_blank" rel="noopener noreferrer">
+          <img src="anyuan.png" alt="anbei" style="width: 15px;">网站所有文件（目前不可用）</a>
+      </div>
+</body>
+
+</html>

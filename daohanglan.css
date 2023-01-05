@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(6.png);
+}
+
+/* 为每个链接设定样式 */
+.dropbtn {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+/* 鼠标放置链接时改变样式 */
+.dropbtn:hover {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: rgb(255, 255, 255);
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+/* 下拉菜单设置样式 */
+.dropdown-content {
+  /* 隐藏菜单 */
+  display: none;
+  position: absolute;
+  background-color: #3131318a;
+  /* 设置链接元素的最小宽度 */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(35, 17, 104, 0.397);
+  overflow: auto;
+}
+/* 下拉菜单设置字体样式 */
+.dropdown-content a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #05ffff81;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹窗动画</title>
+    <link rel="stylesheet" href="dl.css" />
+    <link rel="shortcut icon" href="guanbiao.ico" />
+    <!-- 来自于哔站up:{bili_95936615017},感谢up提供的源码；本人对js不是很精通，HTML和CSS都是由本人进行系统的修改的！希望可以给大家带来一些便利！ -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .boxF {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        background: url("2023.png");
+        align-items: center;
+        padding: 20px;
+      }
+
+      .active {
+        filter: blur(20px);
+        pointer-events: none;
+        user-select: none;
+      }
+
+      .box {
+        position: relative;
+        max-width: 1200px;
+      }
+
+      h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+
+      .box img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        margin-top: 20px;
+        position: relative;
+        padding: 5px 20px;
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #0267ff;
+      }
+
+      .popup {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        padding: 50px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .popupActive {
+        top: 50%;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 音乐开始 -->
+    <audio
+      id="bgmusic"
+      src="chunjie.mp3"
+      autoplay="autoplay"
+      loop="loop"
+      style="display: block; width: 3%; height: 3%"
+    ></audio>
+    <script type="text/javascript">
+      function toggleSound() {
+        var music = document.getElementById("bgmusic"); //获取ID
+        console.log(music);
+        console.log(music.paused);
+        if (music.paused) {
+          //判读是否播放
+          music.paused = false;
+          music.play(); //没有就播放
+        }
+      }
+      setInterval("toggleSound()", 1);
+    </script>
+    <!-- 音乐结束 -->
+
+    <!-- 灯笼开始 -->
+    <!--右一 -->
+    <div class="deng-box">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">乐</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右2-->
+    <div class="deng-box1">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">快</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左二 -->
+    <div class="deng-box3">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">年</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左一 -->
+    <div class="deng-box2">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">新</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 灯笼结束 -->
+    <div class="boxF" id="blue">
+      <div class="box">
+        <p style="font-size: 150%; font-weight: 1000; color: rgb(1, 225, 255)">
+          不要在意一些不开心的事啦！生活嘛！笑一笑就好啦！嘻嘻~~~~
+        </p>
+        <img src="zhuye.png" alt="" />
+        <a href="#" onclick="toggle()" style="border-radius: 50px"
+          >查看更新内容</a
+        >
+        <a
+          href="index.html"
+          style="
+            background-color: rgb(0, 255, 255);
+            color: rgb(0, 0, 0);
+            border-radius: 50px;
+          "
+          >返回主页</a
+        >
+      </div>
+    </div>
+    <div class="popup">
+      <h2 style="text-align: center">内容更新</h2>
+      <p>1.我们对初始界面做了进一步调整。</p>
+      <p>感谢您，谢谢，祝您幸福每一天！</p>
+      <a
+        href="#"
+        onclick="toggle()"
+        style="border-radius: 50px; background-color: black"
+        >关闭内容</a
+      >
+    </div>
+
+    <script>
+      function toggle() {
+        let blue = document.querySelector("#blue");
+        blue.classList.toggle("active");
+        let popup = document.querySelector(".popup");
+        popup.classList.toggle("popupActive");
+      }
+    </script>
+  </body>
+</html>

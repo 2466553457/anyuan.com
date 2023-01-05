@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  /* 数字尽量用%，因为这样可以适配手机 */
+  padding: 3%;
+  background: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.473);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: rgba(236, 220, 0, 0.267);
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color: rgba(255, 255, 255, 0.74);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 底部 */
+/* .footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(201, 201, 201, 0.884);
+  margin-top: 20px;
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 830px;
+  text-decoration: none;
+}*/
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+form .text {
+  display: inline-block;
+  border: 0;
+  width: 40%;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #ff0000;
+}
+
+input {
+  width: 342px;
+  height: 42px;
+  background-color: #ff8c8c;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font: bold 15px "lucida sans", "trebuchet MS", "Tahoma";
+  font-style: italic;
+}
+
+form .search {
+  width: 100px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  /*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+  text-align: center;
+  line-height: 40px;
+  background-color: #ff0000;
+  color: #ffffff;
+}

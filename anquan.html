@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHINA CN | 暗源</title>
+  <link rel="shortcut icon" href="anyuan.ico" />
+  <link rel="stylesheet" href="anyuan.js" />
+  <!-- 表格布局 -->
+  <style>
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* -webkit-user-select: none;   
+  	          -moz-user-select: none;    
+  	          -ms-user-select: none;    
+  	          user-select: none;
+  	          这几个是禁止别人对字体进行复制 */
+    }
+
+    .table {
+      display: table;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+    }
+
+    .table-caption {
+      display: table-caption;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .table-column-group {
+      display: table-column-group;
+    }
+
+    .table-column {
+      display: table-column;
+      width: 200px;
+    }
+
+    .table-row-group {
+      display: table-row-group;
+    }
+
+    .table-row {
+      display: table-row;
+      font-weight: bolder
+    }
+
+    .table-row-group .table-row:hover,
+    .table-footer-group .table-row:hover {
+      background: #d7a9fd;
+    }
+
+    .table-cell {
+      display: table-cell;
+      padding: 1px;
+      border: 2px solid rgb(0, 0, 0);
+    }
+
+    .table-header-group {
+      display: table-header-group;
+      background: rgb(139, 170, 255);
+      font-weight: bold;
+    }
+
+    .table-footer-group {
+      display: table-footer-group;
+    }
+  </style>
+  <!-- 整体布局 -->
+  <style>
+    a {
+      text-decoration: none;
+      font-size: 40px;
+      color: rgb(255, 255, 255);
+      border-style: inset;
+      background-color: rgb(16, 6, 148);
+    }
+
+    .a1 {
+      text-decoration: none;
+      font-size: 40px;
+      color: rgb(217, 255, 0);
+      border-style: inset;
+      background-color: rgb(3, 0, 187);
+    }
+
+    .a2 {
+      text-decoration: none;
+      font-size: 40px;
+      color: rgb(99, 56, 255);
+      border-style: inset;
+      background-color: rgb(164, 255, 111);
+    }
+
+    /*弹层动画（放大）*/
+
+    .popIn {
+      -webkit-animation: fadeleftIn .4s;
+      animation: fadeleftIn .4s;
+      -webkit-animation-name: popIn;
+      animation-name: popIn;
+    }
+
+    @-webkit-keyframes popIn {
+      0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0.5, 0.5, 0.5);
+        opacity: 0;
+      }
+
+      50% {
+        -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 1;
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        -webkit-transform: scale3d(0, 0, 0);
+        transform: scale3d(0.5, 0.5, 0.5);
+        opacity: 0;
+      }
+
+      50% {
+        -webkit-animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        opacity: 1;
+      }
+    }
+
+    /* 图片放大效果 */
+
+/* 定义样式，相对屏幕比例 */
+    .max {
+      width: 50%;
+      height: auto;
+    }
+/* 具体的像素 */
+    .min {
+      width: 100px;
+      height: auto;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <!-- 弹窗代码开始 -->
+  <div class="popIn">
+    <div class="web_notice"
+      style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.815);">
+      <div
+        style="position: fixed;top: 50%;left: 50%;width: 60%;background: rgba(12, 198, 255, 0.863);transform: translate(-50%, -50%);border-radius: 10px;padding: 5% 4%;">
+        <h2 style="font-weight: bold;text-align: center;font-size: 200%;color: rgb(255, 0, 0);">暗源维护</h2>
+        <div style="font-size: 120%;margin-top: 5%;line-height: 150%;color: rgb(0, 0, 0);
+      ">
+          <p>1.我们对初始界面做了进一步调整。</p>
+           <img id='img' class='max' src='https://thumbnail1.baidupcs.com/thumbnail/31504df96gcd45b64e7a2cd78ac1c4f0?fid=1102589190736-250528-197634418699401&rt=pr&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Qkj%2faFFnVjr77FJCc0LxFZVm4E4%3d&expires=8h&chkbd=0&chkv=0&dp-logid=149685068326230392&dp-callid=0&time=1671588000&size=c1920_u1080&quality=90&vuk=1102589190736&ft=image&autopolicy=1'>
+          <p>2.我们对所有界面的图片服务器做了调整，保证了每位到我们网站的小伙伴可以很快看到所有的图片刷新出来。</p>
+           <p>感谢您，谢谢，祝您幸福每一天！</p>
+          <p style="color: rgba(2, 2, 2, 0.527);font-size: 70%;text-align: center;">2022/12/21更新！</p>
+        </div><a
+          style="display: block;background: #565da1;color: rgb(208, 255, 0);text-align: center;font-weight: bold;font-size: 150%;line-height: 300%;margin: 0 auto;margin-top: 1%;border-radius: 32px;width: 80%;"
+          onclick="javascript:document.querySelector('.web_notice').remove()">关闭通知</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 弹窗代码结束 -->
+  <div style="
+          text-align: center;
+          letter-spacing: 10px;
+          border-style: inset;
+          color: rgb(4, 0, 255);
+        ">
+    <p style="font-size: 70px; font-family: kaiti;">
+      《安|全|系|统|维|护|中|心》
+    </p>
+    <p style="font-size: 30px;">
+      《Safety System Maintenance Center》
+    </p>
+  </div>
+  <hr style="
+          height: 10px;
+          border: none;
+          border-top: 10px groove rgb(153, 135, 235);
+        " />
+  <div style="color: rgb(255, 0, 0)">
+    <!-- <p style="text-align: center;">
+      <a href="index.html">点击按钮并返回</a>
+    </p> -->
+  </div>
+  <hr />
+  <div style="font-family:kaiti;">
+    <p style="color: rgb(255, 0, 0); text-align: center; font-size: 200%;">此次维护更新需要十个小时左右，请耐心等待！
+      <!-- <p style="color: rgba(0, 0, 0, 0.514); text-align: center; font-size: 30px;">此次维护更新两个小时。
+    </p>-->
+    </p>
+
+    <p style="color: rgba(0, 0, 0, 0.514); text-align: center; font-size: 30px;">
+      感谢您的耐心等待，系统维护中，维护过程中给您带来不便，请谅解。</p>
+    <p style="color: rgba(0, 0, 0, 0.514); text-align: center; font-size: 30px;">系统维护于北京时间：2022/12/21/10:20</p>
+  </div>
+<audio id="bgmusic" src="http://music.163.com/song/media/outer/url?id=1851244378.mp3" autoplay="autoplay" loop="loop"
+  style="display: block; width: 3%; height:3%;"></audio>
+<script type="text/javascript">
+  function toggleSound() {
+    var music = document.getElementById("bgmusic");//获取ID
+    console.log(music);
+    console.log(music.paused);
+    if (music.paused) { //判读是否播放
+      music.paused = false;
+      music.play(); //没有就播放
+    }
+
+  }
+  setInterval("toggleSound()", 1);
+</script>
+  <div>
+    <div class="table-header-group">
+      <ul class="table-row">
+        <li class="table-cell">日期/时间</li>
+        <li class="table-cell">2022/12/12</li>
+        <li class="table-cell">2022/12/13</li>
+        <li class="table-cell">2022/12/14</li>
+        <li class="table-cell">2022/12/15</li>
+        <li class="table-cell">2022/12/16</li>
+        <li class="table-cell">2022/12/17</li>
+        <li class="table-cell">2022/12/18</li>
+        <li class="table-cell">2022/12/19</li>
+        <li class="table-cell">2022/12/20</li>
+        <li class="table-cell">2022/12/21</li>
+      </ul>
+    </div>
+    <div class="table-row-group">
+      <ul class="table-row">
+        <li class="table-cell" style="background-color: rgb(251, 255, 0);color: rgb(255, 0, 0);">停服维护</li>
+        <li class="table-cell" style="background-color: rgb(255, 0, 0);color: rgb(251, 255, 0);">维护</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(255, 0, 0);color: rgb(251, 255, 0);">维护</li>
+        <li class="table-cell" style="background-color: rgb(255, 0, 0);color: rgb(251, 255, 0);">维护</li>
+      </ul>
+      <ul class="table-row">
+        <li class="table-cell" style="background-color: rgb(161, 159, 4);color: rgb(255, 8, 0);">不停服更新</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(255, 0, 0);color: rgb(251, 255, 0);">维护</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(255, 0, 0);color: rgb(251, 255, 0);">维护</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+        <li class="table-cell" style="background-color: rgb(0, 255, 21);">正常</li>
+      </ul>
+    </div>
+  </div>
+  <div style="
+        text-align: center;
+        background-color: rgba(165, 42, 42, 0.363);
+        font-size: 25px;
+        letter-spacing: 5px;
+      ">
+    <p>
+      <hr>
+      1.安全系统维护中心其作用是为了能更好的更简洁页面，从而能更快的通知到您我们所维护和更新的内容。
+      <hr>
+      2.在维护的过程中，我们不会对外开放网页的所有内容,一般维护时长为一到十个小时，如果是短时，在10分钟到30分钟内更新完成，请耐心等待。
+      <hr>
+      3.感谢您长期以来，对我的信任与支持，感谢！。
+      <hr>
+    </p>
+  </div>
+</body>
+
+</html>
