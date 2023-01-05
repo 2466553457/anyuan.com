@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>防伪查询</title>
+    <link rel="shortcut icon" href="yuanbiao.ico" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+      }
+
+      /* 头部标题 */
+      .header {
+        padding: 30px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* 创建两列 */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 100%;
+      }
+
+      /* 图像部分 */
+      .fakeimg {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(78, 78, 78, 0.164);
+        border-radius: 3%;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* 文章卡片效果 */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      /* 图像部分 */
+      .fakeim {
+        background-image: url("5555.jpg");
+        border-radius: 4%;
+        width: 100%;
+        padding: 20px;
+      }
+      /* 文章卡片效果 */
+      .car {
+        padding: 10%;
+        margin-top: 20px;
+      }
+
+      /* 列后面清除浮动 */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>证书防伪查询</h1>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="car">
+          <div class="fakeim">
+            <img
+              src="11111.jpg"
+              alt="up专用"
+              width="60%"
+              style="display: flex; margin: auto"
+            />
+            <img
+              src="852.png"
+              alt="up专用"
+              width="15%"
+              style="display: flex; left: 61%; top: 150%; position: absolute"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h1
+          style="text-align: center; font-size: 500%; color: rgb(81, 194, 90)"
+        >
+          认证证书
+        </h1>
+
+        <p style="font-size: 200%">发证日期：2022-08-29</p>
+        <p style="font-size: 200%">
+          证书编号：77becade274111ed9a2a6e7b421f07f2
+        </p>
+        <div class="fakeimg">
+          <p style="font-size: 300%">实名信息</p>
+          <p style="font-size: 200%">中文姓名：吴博涛</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="fakeimg">
+          <p style="font-size: 300%">课程信息</p>
+          <p style="font-size: 200%">课程：数据结构与分析</p>
+          <p style="font-size: 200%">签发机构：清华大学</p>
+          <p style="font-size: 200%">签发老师：邓俊辉</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

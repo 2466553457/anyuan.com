@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHINA CN | 本人简介</title>
+  <link rel="shortcut icon" href="tubiao.ico">
+  <link rel="stylesheet" href="dl.css" />
+</head>
+
+<body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      padding: 3%;
+      background-image: url('2023.png');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      Background-size: cover;
+    }
+
+    /* 头部标题 */
+    .header {
+      padding: 30px;
+      text-align: center;
+      /* background: white; */
+    }
+
+    .header h1 {
+      font-size: 50px;
+    }
+
+    /* 导航条 */
+    .topnav {
+      overflow: hidden;
+      background-color: rgba(37, 40, 41, 0.685);
+    }
+
+    /* 导航条链接 */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* 链接颜色修改 */
+    .topnav a:hover {
+      background-color: rgba(255, 187, 0, 0.575);
+      color: rgb(0, 0, 0);
+    }
+
+    /* 创建两列 */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* 右侧栏 */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    /* 图像部分 */
+    .fakeimg {
+      background-color: rgba(0, 228, 236, 0.267);
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* 文章卡片效果 */
+    .card {
+      background-color: rgba(255, 255, 255, 0.664);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* 列后面清除浮动 */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* 底部 */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: rgba(201, 114, 33, 0.699);
+      margin-top: 20px;
+      float: left;
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 10px 830px;
+      text-decoration: none;
+    }
+
+
+    /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .eve {
+      /* display: inline;这是一个可以让两个盒子出现在一行之内，margin-left: 20px;这是让两个文字之间产生缝隙。 */
+      display: inline;
+      margin-left: 20px
+    }
+
+    .ace {
+      /* display: inline;这是一个可以让两个盒子出现在一行之内，margin-left: 20px;这是让两个文字之间产生缝隙。 */
+      display: inline;
+      margin-left: 20px;
+    }
+  </style>
+  </head>
+
+  <body>
+    <!-- 灯笼开始 -->
+    <!--右一 -->
+    <div class="deng-box">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">乐</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右2-->
+    <div class="deng-box1">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">快</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左二 -->
+    <div class="deng-box3">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">年</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左一 -->
+    <div class="deng-box2">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">新</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 灯笼结束 -->
+
+    <div class="header">
+      <div>
+        <img src="tubiao.png" alt="本人专用" width="25%" style="display: flex; align-content: center; margin: auto;">
+        <p style="font-family: kaiti; font-size:300%; background-color: rgba(255, 255, 255, 0.603);">晓空（宇风）</p>
+      </div>
+    </div>
+
+
+    <div class="topnav">
+      <a href="https://space.bilibili.com/427002536?spm_id_from=333.1007.0.0" target="_blank">第一个B站视频频道</a>
+      <a href="https://space.bilibili.com/1826156434?spm_id_from=333.1007.0.0" target="_blank">第二个B站视频频道</a>
+      <a href="https://www.ixigua.com/home/2612047447604352?list_entrance=homepage" target="_blank">西瓜视频频道</a>
+      <a href="https://www.iqiyi.com/u/1454515443/videos" target="_blank">爱奇艺视频频道</a>
+      <!-- <a href="lianxifangshi.html" target="_blank">联系方式</a> -->
+      <a href="https://neocities.org/site_files/gxzy.zip" style="float:right" target="_blank">下载站点</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>个人介绍</h2>
+          <h5 style="color: rgba(0, 0, 0, 0.596)">纪元4719 年 7 月 18 日（六月二十）</h5>
+          <hr>
+          <div style="color: rgba(0, 0, 0, 0.719); font-weight:bolder;">
+            <p>1.网名:晓空（宇风）| 无奈的程序员</p>
+            <p>2.网站:暗源</p>
+            <p>3.网站创立于4719年4月15日，修改正式发布于4719年6月11日</p>
+            <p>
+              4.暗源原名资源共享，初步创立无论是在画面，还是在感观上BUG不断，由于服务器价格昂贵，在4719年5月11日上午9点15分，服务器端正式关闭，经过长达一个月的重新编写，初步形成了崭新的网站，比起以前便捷、美观，于4719年6月11日正式改名为“暗源”
+            </p>
+            <p>5.本人在爱奇艺、bilibili、西瓜视频、搜狐视频、优酷视频、快手视频、抖音视频、小红书都有发布的视频，最主要的还是bilibili、西瓜视频、爱奇艺视频。</p>
+            <p>6.我的联系方式也很简单：1.QQ：2995209639、2.微信：w2995209639、搜索微信公众号：“意闪科技”，如果有什么问题都可以联系我。</p>
+            <p>7.其实也没什么可以介绍的......</p>
+          </div>
+        </div>
+        <div class="card">
+          <h2>文章发布</h2>
+          <h5 style="color: rgba(0, 0, 0, 0.596)">纪元4719 年 6 月 28 日（五月三十）</h5>
+          <div class="fakeimg" style="height:200px;">暂无数据...</div>
+          <p></p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>内容发布</h2>
+          <div class="fakeimg" style="line-height: 2;">
+            <h5>
+              <p><a href="zhonghuarenmingongheguo.html" target="_blank"
+                  style="height: 20px; width: 100px; color: rgb(0, 26, 255);
+text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">中华人民共和国的成立时间：1949年10月1日</a></p>
+            </h5>
+            <h5>
+              <p><a href=""
+                  style="height: 20px; width: 100px;color: rgb(253, 2, 2);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">中华人民共和国共产党成立时间：1921年7月23日</a>
+              </p>
+            </h5>
+            <h5>
+              <p><a href=""
+                  style="height: 20px; width: 100px;color: rgb(179, 86, 0);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">中华人民共和国共青团成立时间：1922年5月5日</a>
+              </p>
+            </h5>
+            <h5>
+              <p><a href=""
+                  style="height: 20px; width: 100px;color: rgb(179, 86, 0);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">中国华夏成立时间：公元前贰仟零柒拾年</a>
+              </p>
+            </h5>
+            <h5>
+              <p><a href=""
+                  style="height: 20px; width: 100px;color: rgb(179, 86, 0);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">炎皇称帝时间：西周共和元年</a>
+              </p>
+            </h5>
+            <h5>
+              <p><a href="" style="height: 20px; width: 100px;color: rgb(179, 86, 0);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">日本投降时间：1945年8月15日正午</a></p>
+            </h5>
+          </div>
+        </div>
+        <div class="card">
+          <h3>推荐项目</h3>
+          <div class="fakeimg">
+            <p>1.游戏推荐</p>
+            <h6>
+              <p style="color: rgb(68, 0, 255);">反恐精英：全球攻势 英文名：Counter-Strike: Global Offensive</p>
+            </h6>
+            <h6>
+              <p style="color: red;">绝地求生：大逃杀 英文名：Playerunknown's Battlegrounds</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(255, 102, 0);">战地风云5 英文名：Battlefield Ⅴ</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(14, 51, 107);">《孤岛惊魂》全系列 英文名：Far Cry full series</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(27, 83, 60);">严阵以待 英文名：Ready or Not</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(52, 23, 119);">使命召唤®：现代战争®II 2022 英文名：Call of Duty®: Modern Warfare® II</p>
+            </h6>
+            <h6>
+              <p>......</p>
+            </h6>
+          </div>
+          <div class="fakeimg">
+            <p>2.学习推荐</p>
+            <h6>
+              <p><a href="https://www.zxx.edu.cn/" target="_blank"
+                  style="height: 20px; width: 100px; color: rgb(0, 26, 255);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">1.国家中小学智慧教育平台</a>
+              </p>
+            </h6>
+            <h6>
+              <p><a href="https://ykt.eduyun.cn/" target="_blank"
+                  style="height: 20px; width: 100px;color: rgb(253, 2, 2);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">2.国家中小学网络云平台</a>
+              </p>
+            </h6>
+            <h6>
+              <p><a href="https://jpk.eduyun.cn/portal/html/1s1k/index/1.html" target="_blank"
+                  style="height: 20px; width: 100px;color: rgb(179, 86, 0);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">3.国家教育资源公共服务平台</a>
+              </p>
+            </h6>
+            <h6>
+              <p>
+              <h6>
+                <p><a href="https://flk.npc.gov.cn/index.html" target="_blank"
+                    style="height: 20px; width: 100px;color: rgb(168, 21, 21);text-decoration: none;border-style: inset; height: 20px; width: 100px;color: #000000;background-color: #ffffff5e;">4.国家法律数据库</a>
+                </p>
+              </h6>
+              <h6>
+                <p>.....</p>
+              </h6>
+          </div>
+          <div class="fakeimg">
+            <p>3.小说推荐</p>
+            <h6>
+              <p style="color: rgb(68, 0, 255);">东北灵异档案————作者：爱会永恒————录播：贰飞</p>
+            </h6>
+            <h6>
+              <p style="color: red;">我的殡葬灵异生涯————作者：奔放的程序员————录播：贰飞</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(255, 102, 0);">极度尸寒————作者：全雨————录播：贰飞</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(14, 51, 107);">极度尸寒————作者：全雨————录播：贰飞</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(53, 113, 204);">借命————作者：桃花十里————录播：贰飞</p>
+            </h6>
+            <h6>
+              <p style="color: rgb(34, 100, 18);">代理阎王————作者：一柱老孤烟————录播：贰飞</p>
+            </h6>
+            <h6>
+              <p>.....</p>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+
+    <footer style="
+        margin-top: 60px;
+        background-color: #0000007e;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      ">
+      <div class="ace">
+        <a style="color: rgba(255, 255, 255, 0.692)" href="https://www.ccopyright.com.cn/" target="_blank"
+          rel="noopener noreferrer">
+          <img src="zhongguobanquan.jpg" alt="anbei" style="width: 15px; height: 15px"> 中国版权保护中心 </a>
+      </div>
+      <div class="ace">
+        <a style="color: rgb(255, 255, 255, 0.692)" href="https://www.ccopyright.com.cn/" target="_blank"
+          rel="noopener noreferrer">
+          <img src="tubiao.png" alt="anbei" style="width: 20px; height: 15px"> 版权 © 2995209639@qq.com</a>
+      </div>
+      <p></p>
+      <div class="eve">
+        <a style="color: rgb(255, 255, 255, 0.692)" href="pcduan.html" target="_blank"
+          rel="noopener noreferrer">PC端证书</a>
+      </div>
+      <div class="eve">
+        <a style="color: rgb(255, 255, 255, 0.692)" href="anzhuoduan.html" target="_blank"
+          rel="noopener noreferrer">移动端证书</a>
+      </div>
+      <div class="eve">
+        <a style="color: rgb(255, 255, 255, 0.692)" href="lianxifangshi.html" target="_blank" rel="noopener noreferrer">联系方式</a>
+      </div>
+      
+
+
+  </body>
+
+</html>

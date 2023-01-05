@@ -1,0 +1,13 @@
+.haha {
+  width: 150px;
+  height: 30px;
+  border: 1px dashed #000;
+  display: table-cell; /*主要是这个属性*/
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+.haha img {
+  width: 25px;
+  height: 17px;
+}

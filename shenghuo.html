@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="shortcut icon" href="anyuan.ico" />
+    <link rel="stylesheet" href="dl.css">
+    <meta charset="utf-8" />
+    <title>CHINA CN | 暗 源</title>
+    <!-- 表格布局 -->
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            /* -webkit-user-select: none;   
+            -moz-user-select: none;    
+            -ms-user-select: none;    
+            user-select: none;
+            这几个是禁止别人对字体进行复制 */
+        }
+    
+        .table {
+            display: table;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+    
+        .table-caption {
+            display: table-caption;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+    
+        .table-column-group {
+            display: table-column-group;
+        }
+    
+        .table-column {
+            display: table-column;
+            width: 200px;
+        }
+    
+        .table-row-group {
+            display: table-row-group;
+        }
+    
+        .table-row {
+            display: table-row;
+        }
+    
+        .table-row-group .table-row:hover,
+        .table-footer-group .table-row:hover {
+            background: #d7a9fd;
+        }
+    
+        .table-cell {
+            display: table-cell;
+            padding: 5px;
+            border: 1px solid rgb(36, 0, 240);
+        }
+    
+        .table-header-group {
+            display: table-header-group;
+            background: rgb(157, 243, 239);
+            font-weight: bold;
+        }
+    
+        .table-footer-group {
+            display: table-footer-group;
+        }
+    </style>
+    <!-- 完成 -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 3%;
+            background-image: url('2023.png');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            Background-size: cover;
+        }
+
+        /* 头部标题 */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: rgba(223, 223, 223, 0.425);
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* 导航条
+      .topnav {
+        overflow: hidden;
+        background-color: rgba(170, 5, 5, 0.459);
+      }
+
+      /* 导航条链接
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+      } */
+
+
+        /* 图像部分 */
+        .fakeimg {
+            background-color: rgba(0, 238, 255, 0.26);
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* 文章卡片效果 */
+        .card {
+            background-color: rgba(255, 255, 255, 0.815);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* 列后面清除浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* 底部 */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        .eve {
+            /* display: inline;这是一个可以让两个盒子出现在一行之内，margin-left: 20px;这是让两个文字之间产生缝隙。 */
+            display: inline;
+            margin-left: 20px
+        }
+        .les {
+            /* display: inline;这是一个可以让两个盒子出现在一行之内，margin-left: 20px;这是让两个文字之间产生缝隙。 */
+            display: inline;
+            margin-left: 80px
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 灯笼开始 -->
+<!--右一 -->
+    <div class="deng-box">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">乐</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右2-->
+    <div class="deng-box1">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">快</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左二 -->
+    <div class="deng-box3">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">年</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 左一 -->
+    <div class="deng-box2">
+      <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+          <div class="deng-b">
+            <div class="deng-t">新</div>
+          </div>
+        </div>
+        <div class="shui shui-a">
+          <div class="shui-c"></div>
+          <div class="shui-b"></div>
+        </div>
+      </div>
+    </div>
+<!-- 灯笼结束 -->
+
+    <div class="header">
+        <h1 style="color: rgb(0, 0, 0); background-color: rgba(0, 255, 76, 0.616)">
+            生活常识小技巧
+        </h1>
+    </div>
+
+    <div class="topnav">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#" style="float: right"></a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <p>
+                    <!-- 这是一个背景加颜色的代码 -->
+                    <!-- line-height:是行高的意思 -->
+                <div id="footer" style="
+                      color: #e91e63;
+                      clear: both;
+                      width: 70%;
+                      line-height: 30px;
+                      text-align: center;
+                      border: 2px solid black;
+                      background-color: rgba(127, 255, 212, 0.308);
+                      text-align: center;
+                    ">
+                    注：生活小技巧，让你的生活更美妙，更美好。
+                </div>
+                </p>
+            </div>
+            <div class="card">
+                <h1>
+                    <p style="color: rgb(0, 0, 0);background-color: rgba(217, 255, 127, 0.534);">一、网线的选择</p>
+                </h1>
+                <h5>纪元4719 年 9 月 21 日（八月廿六）</h5>
+                <h5>公元2022 年 9 月 21 日</h5>
+                <hr />
+                <h3 style="background-color: rgba(255, 217, 0, 0.527);">
+                    (1)、网线选择的注意事项：
+                </h3>
+                <p style="color: rgb(0, 60, 255);">
+                    家用网线尽量不要选择7类网线及以上的网线：
+                </p>
+                <p style="color: rgb(0, 60, 255);">
+                   1.费钱太贵，当然你们家有钱那就当我什么都没说。
+                </p>
+                <p style="color: rgb(0, 60, 255);">
+                   2.这种网线安装较为麻烦。
+                </p>
+                <p style="color: rgb(0, 60, 255);">
+                    3.这种网线的水晶头与其他网线不一样，现在一般的电视不会支持这种网线水晶头，还要请专门安装这种网线的师傅。
+                </p>
+                <h3 style="background-color: rgba(0, 255, 106, 0.527);">
+                    (2)、网线的分类：
+                </h3>
+                <p style="color: rgb(0, 0, 0); font-size: 150%;background-color: rgba(255, 0, 0, 0.466);">
+                    注意：网线上标有CAT.6E或者cat.6e的字样，并不是超六类网线。
+                </p>
+                <div class="table-header-group">
+                    <ul class="table-row">
+                        <li class="table-cell">网线种类</li>
+                        <li class="table-cell">正常网线标识</li>
+                        <li class="table-cell">正常网线标识</li>
+                        <li class="table-cell">异类网线标识</li>
+                        <li class="table-cell">异类网线标识</li>
+                    </ul>
+                </div>
+                <div class="table-row-group">
+                    <ul class="table-row">
+                        <li class="table-cell">五类网线</li>
+                        <li class="table-cell">CAT.5</li>
+                        <li class="table-cell">cat.5</li>
+                        <li class="table-cell"></li>
+                        <li class="table-cell"></li>
+                    </ul>
+                    <ul class="table-row">
+                        <li class="table-cell">超五类网线</li>
+                        <li class="table-cell">CAT.5E</li>
+                        <li class="table-cell">cat.5e</li>
+                        <li class="table-cell"></li>
+                        <li class="table-cell"></li>
+                    </ul>
+                    <ul class="table-row">
+                        <li class="table-cell">六类网线</li>
+                        <li class="table-cell">CAT.6</li>
+                        <li class="table-cell">cat.6</li>
+                        <li class="table-cell">CAT.6E</li>
+                        <li class="table-cell">cat.6e</li>
+                    </ul>
+                    <ul class="table-row">
+                        <li class="table-cell">超六类网线</li>
+                        <li class="table-cell">CAT.6A</li>
+                        <li class="table-cell">cat.6a</li>
+                        <li class="table-cell"></li>
+                        <li class="table-cell"></li>
+                    </ul>
+                </div>
+                <div class="table-footer-group">
+                    <ul class="table-row">
+                        <li class="table-cell">可以表示您网线中文的种类</li>
+                        <li class="table-cell">这个是正常英文的网线表示</li>
+                        <li class="table-cell">这个是正常英文的网线表示</li>
+                        <li class="table-cell">这个是异类英文的网线表示(不推荐)</li>
+                        <li class="table-cell">这个是异类英文的网线表示(不推荐)</li>
+                    </ul>
+                </div>
+                <h3 style="background-color: rgba(0, 247, 255, 0.527);">
+                    (3)、网线速度与支持：
+                </h3>
+                <p style="color: rgb(245, 49, 0); font-size: 18px;background-color: rgba(58, 255, 8, 0.342);">
+                    1.五类网线（CAT.5）：仅支持百兆网络,传输速率为100MBPS数据传输,传输带宽为100M,现如今已经使用的很少了。
+                </p>
+                <p style="color: rgb(146, 101, 3); font-size: 18px;background-color: #00b7ff3a;">
+                    2.超五类网线（CAT.5E）：支持百兆或者千兆以太网络,传输频率为100MHZ,传输带宽为155M,虽然支持千兆传输，但网线距离不能太长，太长网络会不稳定。
+                </p>
+                <p style="color: rgb(5, 44, 54);background-color: rgba(0, 255, 191, 0.26);">
+                    3.“【次于六类的网线（CAT.6E）】”：支持百兆或者千兆以太网络，但是这个网线不同于其他的网线，根据实际测试，线内铜芯要比普通的六类网线细，所以这个网线尽量不要购买。
+                </p>
+                <p style="color: rgb(0, 25, 253);background-color: rgba(255, 228, 196, 0.664);">
+                    4.六类网线（CAT.6）：带宽250M，用于架设千兆网，是未来发展的趋势。六类网线和五类网线的铜芯大小不同,五类网线铜芯为0.45mm以下,超五类网线为0.45mm
+                </p>
+                <p style="color: rgb(255, 0, 221);background-color: rgba(0, 0, 0, 0.151);">
+                    5.超六类网线（CAT.6A）：带宽为500M，支持千兆传输和万兆传输。
+                </p>
+                <h3 style="background-color: rgba(255, 0, 0, 0.281);">
+                    (3)、网线的安装注意事项：
+                </h3>
+                <p style="color: rgb(0, 0, 0); font-size: 18px;background-color: rgba(208, 255, 0, 0.445);">
+                    1.所有网线的水晶头尽量买好的，不然后期后很麻烦，由水晶头产生的网络问题不尽其数。
+                </p>
+                <p style="color: rgb(0, 0, 0); font-size: 18px;background-color: rgba(151, 176, 243, 0.603);">
+                    2.五类网线的水晶头可以适用于超五类网线的接入。
+                </p>
+                <p style="color: rgb(0, 0, 0); font-size: 18px;background-color: rgba(151, 232, 243, 0.603);">
+                    3.六类网线的水晶头可以适用于超六类网线的接入，但是不可以接入五类网线和超五类网线。
+                </p>
+                <h3 style="background-color: rgba(255, 0, 0, 0.281);">
+                    (4)、网线上数字与字母、品牌的注意事项：
+                </h3>
+                <p style="color: rgb(245, 49, 0); font-size: 18px;background-color: rgba(58, 255, 8, 0.342);">
+                    网线上的字母、数字分别代表了：品牌、网线种类、制作网线标准、屏蔽类型、使用场景、米数标记、跳线的特有标记等。
+                </p>
+                <h4>1.品牌</h4>
+                <p style="color: rgb(245, 49, 0); font-size: 18px;background-color: rgba(58, 255, 8, 0.342);">
+                    可以根据这个标识来核查是否是购买的品牌，谨防无良商家调包，以次充好。一般箱线（不带水晶头）品牌的标识后面会印上公司官网的网址。
+                </p>
+                <h4>2.网线种类</h4>
+                <p style="color: rgb(146, 101, 3); font-size: 18px;background-color: #00b7ff3a;">
+                    目前市场上的网线基本分为：五类网线（CAT5）、超五类网线（CAT5e）、六类网线（CAT6）、超六类网线（CAT6A）、七类网线（CAT7）、八类网线（CAT8）等。
+                </p>
+                <h4>3.制作网线标准</h4>
+                <p style="color: rgb(5, 44, 54);background-color: rgba(0, 255, 191, 0.26);">
+                    AWG是美制电线标准的简称，AWG值是导线厚度（以英寸计）的函数。直径为24AWG，约为0.511mm。
+                </p>
+                <h4>4.屏蔽类型</h4>
+                <p style="color: rgb(0, 25, 253);background-color: rgba(255, 228, 196, 0.664);">
+                    根据屏蔽类型网线分为：非屏蔽（UTP）、单屏蔽（FTP）、双屏蔽（SFTP）。屏蔽主要是为了减少信号干扰，保障信息安全。
+                </p>
+                <h4>5.使用场景</h4>
+                <p style="color: rgb(0, 0, 0);background-color: rgba(0, 0, 0, 0.151);">
+                    solidLANcable代表线缆是实心的线芯，在局域网的环境中使用。
+                </p>
+                <h4>6.米数标记</h4>
+                <p style="color: rgb(122, 6, 107);background-color: rgba(0, 0, 0, 0.151);">
+                    在实际布线场景中，米数标记是最实用的，并只出现在箱线的标识上。NA无特殊意义，仅仅是为了更好地将米数标识和前面标识隔开，方便快速查看。
+                </p>
+                <h4>7.跳线的特有标记</h4>
+                <p style="color: rgb(41, 12, 145);background-color: rgba(0, 0, 0, 0.151);">
+                    跳线，即自带水晶头，因为水晶头的接法分为T568A和T568B，所以跳线会将水晶头的接法做标记。TIA/EIA代表网线水晶头接法的标准，一般缩写为“T”。
+                </p>
+            </div>
+            <div class="card">
+                <h1>
+                    <p style="color: rgb(0, 255, 76);background-color: rgba(61, 61, 61, 0.541);">二、暂无......</p>
+                </h1>
+                <h5>纪元4719 年 9 月 21 日（八月廿六）</h5>
+                <h5>公元2022 年 9 月 21 日</h5>
+                <hr />
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>关于网络的一些信息1</h2>
+                <div class="fakeimg" style="height:100px;">暂无信息...</div>
+            </div>
+            <!-- <div class="card">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+    </div> -->
+
+        </div>
+
+        <!-- 从这里开始 -->
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>关于网络的一些信息2</h2>
+                <div class="fakeimg" style="height:100px;">暂无信息...</div>
+            </div>
+            <!-- <div class="card">
+      <h3>热门文章</h3>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+      <div class="fakeimg"><p>图片</p></div>
+    </div> -->
+
+        </div>
+        <!-- 到这里结束 -->
+    </div>
+
+    </div>
+    </div>
+
+    <div>
+        <footer style="
+            margin-top: 60px;
+            background-color: #ccccccc2;
+            text-align: center;
+            padding: 40px;
+            font-size: 12px;
+          ">
+            <div class="eve">
+                <a style="color: rgb(0, 0, 0)" href="https://www.ccopyright.com.cn/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="zhongguobanquan.jpg" alt="anbei" style="width: 15px; height: 15px"> 中国版权保护中心 </a>
+            </div>
+            <div class="eve">
+                <a style="color: rgb(0, 0, 0)" href="https://www.ccopyright.com.cn/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="tubiao.png" alt="anbei" style="width: 20px; height: 15px"> 版权 © 2995209639@qq.com</a>
+            </div>
+    </div>
+</body>
+
+</html>
