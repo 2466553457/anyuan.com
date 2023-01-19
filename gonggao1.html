@@ -2,9 +2,9 @@
 <html lang="zh-cn">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="guanbiao.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>公告展示</title>
+    <title>弹窗动画</title>
     <link rel="stylesheet" href="dl.css" />
     <link rel="shortcut icon" href="guanbiao.ico" />
     <!-- 来自于哔站up:{bili_95936615017},感谢up提供的源码；本人对js不是很精通，HTML和CSS都是由本人进行系统的修改的！希望可以给大家带来一些便利！ -->
@@ -21,7 +21,7 @@
         min-height: 100vh;
         display: flex;
         justify-content: center;
-        background: url("2023.png");
+        background: url("https://imgbed.link/file/15431");
         align-items: center;
         padding: 20px;
       }
@@ -63,14 +63,13 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 50%;
+        width: 600px;
         padding: 50px;
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
         background-color: #ffffff;
         visibility: hidden;
         opacity: 0;
         transition: 0.5s;
-        text-align: center;
       }
 
       .popupActive {
@@ -191,9 +190,7 @@
     <div class="popup">
       <h2 style="text-align: center">内容更新</h2>
       <p>1.我们对初始界面做了进一步调整。</p>
-      <hr />
       <p>感谢您，谢谢，祝您幸福每一天！</p>
-      <hr />
       <a
         href="#"
         onclick="toggle()"
